@@ -2,7 +2,7 @@ import styles from './ProjectPanel.module.css';
 import useReveal from '../hooks/useReveal';
 
 function ProjectPanel({ project, label, panelRef }) {
-    const { title, description, category, demoUrl, repoUrl, repoBackendUrl, imageUrl } = project;
+    const { title, description, category, demoUrl, repoUrl, repoBackendUrl, imageUrl, demoVideo } = project;
 
     const [revealRef, isVisible] = useReveal();
 
@@ -51,13 +51,25 @@ function ProjectPanel({ project, label, panelRef }) {
                         style={{ '--bg-image': `url(${imageUrl})` }}
                         aria-hidden="true"
                     />
-                    <img
-                        src={imageUrl}
-                        alt={`Anteprima di ${title}`}
-                        loading="lazy"
-                        decoding="async"
-                        className={styles.sharpImage}
-                    />
+                    {demoVideo ? (
+                        <video
+                            src={demoVideo}
+                            poster={imageUrl}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className={styles.sharpImage}
+                        />
+                    ) : (
+                        <img
+                            src={imageUrl}
+                            alt={`Anteprima di ${title}`}
+                            loading="lazy"
+                            decoding="async"
+                            className={styles.sharpImage}
+                        />
+                    )}
                 </div>
             </div>
         </section>

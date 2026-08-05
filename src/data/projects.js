@@ -108,7 +108,7 @@ const projects = [
         title: "Homepage PlayStation (clone)",
         description: "Ricostruzione della homepage PlayStation con Bootstrap 5: grid system, flexbox e breakpoint responsive per mobile, tablet e desktop.",
         category: "HTML/CSS",
-        demoUrl: "",
+        demoUrl: "https://francesco-cassese.github.io/htmlcss-playstation/",
         repoUrl: "https://github.com/francesco-cassese/htmlcss-playstation",
         imageUrl: playstationImg
     }
