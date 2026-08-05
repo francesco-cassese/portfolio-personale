@@ -1,0 +1,108 @@
+/*
+  LAYOUT
+  ================================================================== */
+
+.projectsSection {
+    position: relative;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: var(--space-4);
+    padding: 0 var(--space-4);
+}
+
+.panels {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/*
+  FILTER BAR
+  ================================================================== */
+
+.filterBar {
+    position: sticky;
+    top: var(--navbar-height);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: 16px var(--space-4);
+    background: var(--color-bg-soft);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.heading {
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    white-space: nowrap;
+}
+
+.filterContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/*
+  FILTER BUTTONS
+  ================================================================== */
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 8px 18px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 999px;
+    background-color: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filterBtn:hover {
+    color: var(--color-text);
+    border-color: var(--color-accent);
+}
+
+.filterBtn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.activeBtn {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-weight: 600;
+}
+
+.activeBtn:hover {
+    color: var(--color-accent-contrast);
+}
+
+/*
+  RESPONSIVE
+  ================================================================== */
+
+@media (max-width: 768px) {
+    .filterBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px var(--space-2);
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}

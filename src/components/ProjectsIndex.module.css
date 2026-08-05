@@ -1,0 +1,89 @@
+/*
+  LAYOUT
+  ================================================================== */
+
+.index {
+    position: sticky;
+    top: calc(var(--navbar-height) + var(--filter-bar-height) + var(--space-3));
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    list-style: none;
+}
+
+/*
+  NUMBER BUTTON
+  ================================================================== */
+
+.numberBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-strong);
+    background: transparent;
+    color: var(--color-text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.numberBtn:hover {
+    color: var(--color-text);
+    border-color: var(--color-accent);
+}
+
+.numberBtn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/*
+  ACTIVE STATE
+  ================================================================== */
+
+.numberBtn.active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-weight: 600;
+}
+
+/*
+  RESPONSIVE
+  ================================================================== */
+
+@media (max-width: 768px) {
+    .index {
+        position: sticky;
+        top: calc(var(--navbar-height) + var(--filter-bar-height));
+        width: 100%;
+        background: var(--color-bg-soft);
+        border-bottom: 1px solid var(--color-border);
+        z-index: 2;
+    }
+
+    .list {
+        flex-direction: row;
+        gap: 8px;
+        padding: 10px var(--space-2);
+        overflow-x: auto;
+    }
+
+    .numberBtn {
+        flex-shrink: 0;
+        width: 38px;
+        height: 38px;
+        font-size: 0.75rem;
+    }
+}
