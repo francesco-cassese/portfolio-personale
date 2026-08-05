@@ -5,6 +5,7 @@ import cineListImg from '../assets/projects/cinelist.webp';
 import laravelComicsImg from '../assets/projects/laravel-comics.webp';
 import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
+import phpHotelDemo from '../assets/projects/php-hotel-demo.mp4';
 import phpDischiImg from '../assets/projects/php-dischi.webp';
 import phpPasswordImg from '../assets/projects/php-password.webp';
 import passwordGeneratorDemo from '../assets/projects/password-generator-demo.mp4';
@@ -75,7 +76,8 @@ const projects = [
         category: "PHP",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/php-hotel",
-        imageUrl: phpHotelImg
+        imageUrl: phpHotelImg,
+        demoVideo: phpHotelDemo
     },
     {
         id: 8,
