@@ -1,0 +1,190 @@
+/*
+  RESET
+  ================================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  ROOT — design tokens
+  ================================================================== */
+
+:root {
+
+  --color-bg: #18100c;
+  --color-bg-soft: #211712;
+  --color-bg-elevated: #2b1e16;
+  --color-border: rgba(246, 237, 226, 0.1);
+  --color-border-strong: rgba(246, 237, 226, 0.2);
+
+  --color-text: #f6ede2;
+  --color-text-muted: #c9b7a4;
+  --color-text-faint: #8d7a6a;
+
+  --color-accent: #e2a854;
+  --color-accent-strong: #f0b464;
+  --color-accent-soft: rgba(226, 168, 84, 0.14);
+  --color-accent-contrast: #241407;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --navbar-height: 73px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  color-scheme: dark;
+}
+
+/*
+  GLOBAL
+  ================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(226, 168, 84, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(226, 168, 84, 0.05), transparent 45%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  line-height: 1.6;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-elevated);
+  border-radius: 10px;
+  border: 2px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-soft);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#top,
+#percorso,
+#competenze,
+#progetti,
+#contatti {
+  scroll-margin-top: calc(var(--navbar-height) + var(--space-2));
+}
+
+/*
+  SKIP LINK
+  ================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-2);
+  z-index: 100;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s var(--ease-out);
+}
+
+.skip-link:focus-visible {
+  top: var(--space-2);
+}
+
+/*
+  SCROLL REVEAL utility
+  ================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/*
+  CURSOR GLOW
+  ================================================================== */
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(226, 168, 84, 0.1), transparent 70%);
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
