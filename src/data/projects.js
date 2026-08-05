@@ -7,6 +7,7 @@ import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
 import phpDischiImg from '../assets/projects/php-dischi.webp';
 import phpPasswordImg from '../assets/projects/php-password.webp';
+import passwordGeneratorDemo from '../assets/projects/password-generator-demo.mp4';
 import phpMovieImg from '../assets/projects/php-movie.webp';
 import playstationImg from '../assets/projects/playstation.webp';
 
@@ -92,7 +93,8 @@ const projects = [
         category: "PHP",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/php-strong-password-generator",
-        imageUrl: phpPasswordImg
+        imageUrl: phpPasswordImg,
+        demoVideo: passwordGeneratorDemo
     },
     {
         id: 10,
