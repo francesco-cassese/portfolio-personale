@@ -2,6 +2,7 @@ import mxTrackImg from '../assets/projects/mx-track.webp';
 import porcheDottoImg from '../assets/projects/porchedotto.webp';
 import reSeaImg from '../assets/projects/resea.webp';
 import cineListImg from '../assets/projects/cinelist.webp';
+import cineListDemo from '../assets/projects/cinelist-demo.mp4';
 import laravelComicsImg from '../assets/projects/laravel-comics.webp';
 import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
@@ -9,7 +10,7 @@ import phpHotelDemo from '../assets/projects/php-hotel-demo.mp4';
 import phpDischiImg from '../assets/projects/php-dischi.webp';
 import phpDischiDemo from '../assets/projects/php-dischi-demo.mp4';
 import phpPasswordImg from '../assets/projects/php-password.webp';
-import passwordGeneratorDemo from '../assets/projects/password-generator-demo.mp4';
+import phpPasswordDemo from '../assets/projects/php-password-demo.mp4';
 import phpMovieImg from '../assets/projects/php-movie.webp';
 import phpMovieDemo from '../assets/projects/php-movie-demo.mp4';
 import playstationImg from '../assets/projects/playstation.webp';
@@ -51,7 +52,8 @@ const projects = [
         category: "Laravel",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/laravel-model-controller",
-        imageUrl: cineListImg
+        imageUrl: cineListImg,
+        demoVideo: cineListDemo
     },
     {
         id: 5,
@@ -99,7 +101,7 @@ const projects = [
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/php-strong-password-generator",
         imageUrl: phpPasswordImg,
-        demoVideo: passwordGeneratorDemo
+        demoVideo: phpPasswordDemo
     },
     {
         id: 10,
