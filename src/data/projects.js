@@ -4,6 +4,7 @@ import reSeaImg from '../assets/projects/resea.webp';
 import cineListImg from '../assets/projects/cinelist.webp';
 import cineListDemo from '../assets/projects/cinelist-demo.mp4';
 import laravelComicsImg from '../assets/projects/laravel-comics.webp';
+import laravelComicsDemo from '../assets/projects/laravel-comics-demo.mp4';
 import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
 import phpHotelDemo from '../assets/projects/php-hotel-demo.mp4';
@@ -62,7 +63,8 @@ const projects = [
         category: "Laravel",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/laravel-comics",
-        imageUrl: laravelComicsImg
+        imageUrl: laravelComicsImg,
+        demoVideo: laravelComicsDemo
     },
     {
         id: 6,
