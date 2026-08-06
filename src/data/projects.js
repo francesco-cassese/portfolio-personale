@@ -6,6 +6,7 @@ import cineListDemo from '../assets/projects/cinelist-demo.mp4';
 import laravelComicsImg from '../assets/projects/laravel-comics.webp';
 import laravelComicsDemo from '../assets/projects/laravel-comics-demo.mp4';
 import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
+import laravelPrimiPassiDemo from '../assets/projects/laravel-primipassi-demo.mp4';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
 import phpHotelDemo from '../assets/projects/php-hotel-demo.mp4';
 import phpDischiImg from '../assets/projects/php-dischi.webp';
@@ -73,7 +74,8 @@ const projects = [
         category: "Laravel",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/laravel-primi-passi",
-        imageUrl: laravelPrimiPassiImg
+        imageUrl: laravelPrimiPassiImg,
+        demoVideo: laravelPrimiPassiDemo
     },
     {
         id: 7,
