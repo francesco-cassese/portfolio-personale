@@ -7,6 +7,7 @@ import laravelPrimiPassiImg from '../assets/projects/laravel-primipassi.webp';
 import phpHotelImg from '../assets/projects/php-hotel.webp';
 import phpHotelDemo from '../assets/projects/php-hotel-demo.mp4';
 import phpDischiImg from '../assets/projects/php-dischi.webp';
+import phpDischiDemo from '../assets/projects/php-dischi-demo.mp4';
 import phpPasswordImg from '../assets/projects/php-password.webp';
 import passwordGeneratorDemo from '../assets/projects/password-generator-demo.mp4';
 import phpMovieImg from '../assets/projects/php-movie.webp';
@@ -86,7 +87,8 @@ const projects = [
         category: "PHP",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/php-dischi-json",
-        imageUrl: phpDischiImg
+        imageUrl: phpDischiImg,
+        demoVideo: phpDischiDemo
     },
     {
         id: 9,
