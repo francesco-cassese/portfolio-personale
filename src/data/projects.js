@@ -11,6 +11,7 @@ import phpDischiDemo from '../assets/projects/php-dischi-demo.mp4';
 import phpPasswordImg from '../assets/projects/php-password.webp';
 import passwordGeneratorDemo from '../assets/projects/password-generator-demo.mp4';
 import phpMovieImg from '../assets/projects/php-movie.webp';
+import phpMovieDemo from '../assets/projects/php-movie-demo.mp4';
 import playstationImg from '../assets/projects/playstation.webp';
 
 const projects = [
@@ -107,7 +108,8 @@ const projects = [
         category: "PHP",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/ex-php8-oop-movie",
-        imageUrl: phpMovieImg
+        imageUrl: phpMovieImg,
+        demoVideo: phpMovieDemo
     },
     {
         id: 11,
