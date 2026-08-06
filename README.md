@@ -7,7 +7,7 @@ Portfolio personale realizzato con React e Vite, pensato per raccontare il mio p
 - **Hero** — presentazione e punto d'ingresso del sito
 - **Journey** — il percorso professionale: dalla cucina al corso Boolean di full-stack development, fino allo sviluppo software di oggi
 - **Skills** — competenze tecniche: HTML, CSS, JavaScript, React, Node.js, MySQL, PHP, Laravel
-- **Projects** — raccolta di progetti realizzati durante il percorso di formazione e come progetti personali, filtrabili per categoria (Full-Stack, Laravel, PHP, HTML/CSS)
+- **Projects** — raccolta di progetti realizzati durante il percorso di formazione e come progetti personali, filtrabili per categoria (Full-Stack, Laravel, PHP, HTML/CSS), con anteprime video demo per i progetti che ne dispongono
 - **Contacts** — contatti diretti (GitHub, LinkedIn, email)
 
 Il sito include inoltre effetti di interazione come reveal-on-scroll e un effetto cursore custom (`useReveal`, `CursorGlow`).
@@ -37,7 +37,7 @@ pnpm dev
 
 ```
 src/
-├── assets/          # immagini (hero, screenshot progetti)
+├── assets/          # immagini e video demo (hero, screenshot e anteprime progetti)
 ├── components/       # componenti React, uno per sezione
 ├── data/              # dati statici (progetti, tappe del percorso)
 ├── hooks/             # hook custom (reveal on scroll)
