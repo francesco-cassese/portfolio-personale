@@ -1,6 +1,7 @@
 import mxTrackImg from '../assets/projects/mx-track.webp';
 import mxTrackDemo from '../assets/projects/mx-track-demo.mp4';
 import porcheDottoImg from '../assets/projects/porchedotto.webp';
+import porcheDottoDemo from '../assets/projects/porchedotto-demo.mp4';
 import reSeaImg from '../assets/projects/resea.webp';
 import cineListImg from '../assets/projects/cinelist.webp';
 import cineListDemo from '../assets/projects/cinelist-demo.mp4';
@@ -37,7 +38,8 @@ const projects = [
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/webapp-react",
         repoBackendUrl: "https://github.com/francesco-cassese/webapp-express",
-        imageUrl: porcheDottoImg
+        imageUrl: porcheDottoImg,
+        demoVideo: porcheDottoDemo
     },
     {
         id: 3,
