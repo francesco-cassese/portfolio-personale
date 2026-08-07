@@ -38,6 +38,7 @@ const projects = [
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/webapp-react",
         repoBackendUrl: "https://github.com/francesco-cassese/webapp-express",
+        videoUrl: "https://www.youtube.com/watch?v=Xy1bQHeexN8",
         imageUrl: porcheDottoImg,
         demoVideo: porcheDottoDemo
     },

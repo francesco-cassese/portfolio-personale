@@ -2,7 +2,7 @@ import styles from './ProjectPanel.module.css';
 import useReveal from '../hooks/useReveal';
 
 function ProjectPanel({ project, label, panelRef }) {
-    const { title, description, category, demoUrl, repoUrl, repoBackendUrl, imageUrl, demoVideo } = project;
+    const { title, description, category, demoUrl, repoUrl, repoBackendUrl, videoUrl, imageUrl, demoVideo } = project;
 
     const [revealRef, isVisible] = useReveal();
 
@@ -24,11 +24,16 @@ function ProjectPanel({ project, label, panelRef }) {
                     <h3 className={styles.title}>{title}</h3>
                     <p className={styles.description}>{description}</p>
 
-                    {(demoUrl || repoUrl || repoBackendUrl) && (
+                    {(demoUrl || repoUrl || repoBackendUrl || videoUrl) && (
                         <div className={styles.links}>
                             {demoUrl && (
                                 <a href={demoUrl} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
                                     Demo live
+                                </a>
+                            )}
+                            {videoUrl && (
+                                <a href={videoUrl} target="_blank" rel="noopener noreferrer" className={styles.linkBtnGhost}>
+                                    Video completo
                                 </a>
                             )}
                             {repoUrl && (
