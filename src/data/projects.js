@@ -3,6 +3,7 @@ import mxTrackDemo from '../assets/projects/mx-track-demo.mp4';
 import porcheDottoImg from '../assets/projects/porchedotto.webp';
 import porcheDottoDemo from '../assets/projects/porchedotto-demo.mp4';
 import reSeaImg from '../assets/projects/resea.webp';
+import reSeaDemo from '../assets/projects/resea-demo.mp4';
 import cineListImg from '../assets/projects/cinelist.webp';
 import cineListDemo from '../assets/projects/cinelist-demo.mp4';
 import laravelComicsImg from '../assets/projects/laravel-comics.webp';
@@ -50,7 +51,8 @@ const projects = [
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/reSea-Frontend",
         repoBackendUrl: "https://github.com/francesco-cassese/reSea-Express",
-        imageUrl: reSeaImg
+        imageUrl: reSeaImg,
+        demoVideo: reSeaDemo
     },
     {
         id: 4,
