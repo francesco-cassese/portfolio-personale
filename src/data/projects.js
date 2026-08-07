@@ -1,4 +1,5 @@
 import mxTrackImg from '../assets/projects/mx-track.webp';
+import mxTrackDemo from '../assets/projects/mx-track-demo.mp4';
 import porcheDottoImg from '../assets/projects/porchedotto.webp';
 import reSeaImg from '../assets/projects/resea.webp';
 import cineListImg from '../assets/projects/cinelist.webp';
@@ -25,7 +26,8 @@ const projects = [
         category: "Full-Stack",
         demoUrl: "",
         repoUrl: "https://github.com/francesco-cassese/mx_track_and_bike_manager",
-        imageUrl: mxTrackImg
+        imageUrl: mxTrackImg,
+        demoVideo: mxTrackDemo
     },
     {
         id: 2,
