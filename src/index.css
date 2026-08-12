@@ -59,6 +59,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.scrollSpacer {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg);

@@ -23,6 +23,7 @@ function App() {
         <div className="container">
           <Contacts />
         </div>
+        <div className="scrollSpacer" aria-hidden="true" />
       </main>
     </>
   );
